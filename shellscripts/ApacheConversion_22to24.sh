@@ -3,7 +3,8 @@
 # Author: Neil Aaron Madaczky
 # ScriptVersion=1.0
 
-# This script is to automate the conversion of Apache 2.2.23 to 2.4.29. This assumes both versions are installed in "/web/apache/2.2.23/" & "/web/apache/2.4.29/)" directories respectively. For more detail with regard to the goal of upgrading 2.2 to 2.4 consult Apache documentation https://httpd.apache.org/docs/current/upgrading.html
+# This script is to automate the conversion of Apache 2.2.23 to 2.4.29. This assumes both versions are installed in "/web/apache/2.2.23/" & "/web/apache/2.4.29/" directories respectively.
+# For more detail with regard to the goal of upgrading 2.2 to 2.4 consult Apache documentation https://httpd.apache.org/docs/current/upgrading.html
 
 # Determine which environment and instance number we're working with (QA|PROD 01|02) in order to accurately make updates to the various configuation files.
 ENV=$(echo $HOSTNAME -f | cut -c1)
